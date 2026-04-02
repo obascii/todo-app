@@ -33,4 +33,4 @@ Users should be able to:
 ### Links
 
 - Solution URL: [View Solution](https://github.com/obascii/todo-app)
-- Live Site URL: [Add live site URL here](https://github.com/obascii/todo-app)
+- Live Site URL: [View Live](https://todo-app-9p6i.onrender.com)
