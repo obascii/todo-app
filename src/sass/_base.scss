@@ -1,0 +1,55 @@
+:root {
+    --bg-color: hsl(235, 21%, 11%);
+    --bg-app-color: hsl(235, 24%, 19%);
+    --task-text-color: hsl(234, 39%, 85%);
+    --task-complete-color: hsl(233, 14%, 35%);
+    --list-color: hsl(237, 14%, 26%);
+    --list-text-hover-color: hsl(236, 33%, 92%);
+    --line-color: hsl(234, 11%, 52%);
+
+    --bg-image: url('/src/images/bg-desktop-dark.jpg');
+    --icon: url('/src/images/icon-sun.svg');
+
+    @media (max-width: 40rem) {
+        --bg-image: url('/src/images/bg-mobile-dark.jpg');
+    }
+}
+
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+body {
+    font-family: "Josefin Sans", sans-serif;
+    background-color: var(--bg-color);
+}
+
+:root:has(#theme-toggle:checked) {
+    --bg-color: hsl(0, 0%, 98%);
+    --bg-app-color: #fff;
+    --task-text-color: hsl(235, 19%, 35%);
+    --task-complete-color: hsl(236, 9%, 61%);
+    --list-color: hsl(233, 11%, 84%);
+    --list-text-hover-color: hsl(235, 19%, 35%);
+    --line-color: hsl(236, 33%, 92%);
+
+    --bg-image: url('/src/images/bg-desktop-light.jpg');
+    --icon: url('/src/images/icon-moon.svg');
+
+    @media (max-width: 40rem) {
+        --bg-image: url('/src/images/bg-mobile-light.jpg');
+    }
+} 

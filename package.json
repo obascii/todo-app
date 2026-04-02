@@ -1,0 +1,16 @@
+{
+  "name": "todo-app-main",
+  "version": "1.0.0",
+  "description": "Frontend mentor design challenge todo app project",
+  "default": "index.html",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html --dist-dir ./dist"
+  },
+  "author": "Obasi Wisdom",
+  "license": "ISC",
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.16.4",
+    "parcel": "^2.16.4"
+  }
+}

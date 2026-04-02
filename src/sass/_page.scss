@@ -1,0 +1,51 @@
+.background {
+    height: 30rem;
+    width: 100%;
+    background-image: var(--bg-image);
+    background-size: cover;
+
+    @media (max-width: 40rem) {
+        height: 20rem;
+    }
+}
+
+.container {
+    width: min(40rem, 90vw);
+}
+
+#theme-toggle {
+    visibility: hidden;
+}
+
+.toggle-icon {
+    display: inline-block;
+    height: 3rem;
+    width: 3rem;
+    background-image: var(--icon);
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+.u-margin-top {
+    margin-top: 3rem;
+}
+
+.list__item:hover .btn {
+    display: flex;
+}
+
+body {
+    &::after {
+        content: 'Drag and drop to reorder';
+        color: var(--task-complete-color);
+        position: absolute;
+        left: 50%;
+        bottom: 4rem;
+        transform: translateX(-50%);
+        z-index: -1;
+    }
+}
+
+section {
+    position: relative;
+}

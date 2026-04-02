@@ -1,0 +1,38 @@
+.form {
+    width: 100%;
+    padding: 1.5rem;
+    background-color: var(--bg-app-color);
+    border-radius: .3rem;
+    overflow: hidden;
+    position: relative;
+
+    &::before {
+        content: '';
+        display: inline-block;
+        height: 2.2rem;
+        width: 2.2rem;
+        border-radius: 50%;
+        border: 1px solid var(--task-complete-color);
+        background: transparent;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    &__field {
+        padding-left: 3rem;
+        width: 100%;
+        background-color: transparent;
+        border: none;
+        color: var(--task-text-color);
+        
+        &:focus {
+            outline: none;
+        }
+
+        &::placeholder {
+            color: var(--task-complete-color);
+        }
+    }
+}
+

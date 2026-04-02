@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./src/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Todo app</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="src/sass/main.scss">
+
+  <script defer src="src/js/controller.js"></script>
+</head>
+<body>
+  <div class="background"></div>
+  <section>
+    <div class="container">
+      <header class="header">
+        <h1>Todo</h1>
+        <label for="theme-toggle" class="toggle-icon">
+          <input type="checkbox" id="theme-toggle">
+        </label>
+      </header>
+  
+      <form class="form u-margin-top">
+        <input type="text" class="form__field" placeholder="Create a new todo...">
+      </form>
+  
+      <ul class="list u-margin-top">
+        <li class="list__item list__item--completed">
+          <label for="check-id" class="checkbox">
+            <input type="checkbox" id="check-id">
+            <span class="check"></span>
+          </label>
+          <span>Complete online javascript course</span>
+          <button class="btn btn--close"></button>
+        </li>
+        <li class="list__item">
+          <label for="check-id" class="checkbox">
+            <input type="checkbox" id="check-id">
+            <span class="check"></span>
+          </label>
+          <span>Complete online javascript course</span>
+          <button class="btn btn--close"></button>
+        </li>
+        <li class="list__footer">
+          <span>5 items left</span>
+          <ul>
+            <li>All</li>
+            <li>Active</li>
+            <li>Completed</li>
+          </ul>
+          <span>Clear completed</span>
+        </li> 
+      </ul>
+    </div>
+  </section>
+</body>
+</html>
